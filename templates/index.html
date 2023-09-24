@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Checker</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Price Checker Web App</h1>
+    </header>
+    <main>
+        <form id="priceForm">
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <!-- Add more options for categories -->
+            </select>
+            
+            <label for="commodity">Select Commodity:</label>
+            <select id="commodity" name="commodity">
+                <option value="commodity1">Commodity 1</option>
+                <option value="commodity2">Commodity 2</option>
+                <!-- Add more options for commodities -->
+            </select>
+            
+            <!-- Add more dropdowns for other options -->
+            
+            <button id="checkPriceBtn" type="button">Check Price</button>
+        </form>
+        
+        <div id="result" class="hidden">
+            <h2>Price: <span id="priceValue"></span></h2>
+        </div>
+    </main>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
